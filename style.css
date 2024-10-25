@@ -1,0 +1,57 @@
+body {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+#heading {
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-weight: normal;
+    font-size: 55px;
+    width: 500px;
+    margin:20px auto ;
+    padding: 20px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Staatliches', cursive;
+    border-radius: 3px;
+}
+.active{
+    background-color: black;
+    color: white;
+}
+p {
+    color: grey;
+    margin: 0;
+}
+
+h2{
+    font-size: 30px;
+    padding:0;   
+    margin:0;
+    color: black;
+    font-family: 'Staatliches', cursive;
+}
+
+.card{
+    width: 320px;
+    display: inline-block;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+img{
+  width: 300;
+  border-radius: 5px;
+  margin: 10px auto;
+}
