@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Superhero Cards</title>
+        <link rel='stylesheet' href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&family=Staatliches&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <h1 id="heading"> Superhero Cards </h1>
+     
+        
+        <div class="filters">
+          <button value="all">Show All</button>
+          <button value="donno">Donno</button>
+          <button value="avengers">Avengers</button>
+          <button value="guardians">Guardians of Galaxy</button>
+
+        </div>
+
+        <div class="list">
+          <div class = "card avengers all">
+            <img src = "images/hulk.jpg">
+            <h2>Hulk</h2>
+            <p>Its thanos</p>
+        </div>
+          <div class = "card donno all">
+            <img src = "images/beastboy.jpg">
+            <h2>Beastboy</h2>
+            <p>Its thanos</p>
+        </div>
+          <div class = "card avengers all">
+            <img src = "images/thor.jpg">
+            <h2>Thor</h2>
+            <p>Its thanos</p>
+        </div>
+          <div class = "card avengers all">
+            <img src = "images/spiderman.jpg">
+            <h2>spiderman</h2>
+            <p>Its thanos</p>
+        </div>
+          <div class = "card guardians all">
+            <img src = "images/groot.jpg">
+            <h2>groot</h2>
+            <p>Its groot</p>
+        </div>
+          <div class = "card guardians all">
+            <img src = "images/starlord.jpg">
+            <h2>starlord</h2>
+            <p>Its starlord</p>
+        </div><div class = "card guardians all">
+            <img src = "images/superman.jpg">
+            <h2>superman</h2>
+            <p>Its superman</p>
+        </div><div class = "card avengers all">
+            <img src = "images/gamora.jpg">
+            <h2>gamora</h2>
+            <p>Its gamora</p>
+        </div><div class = "card donno all">
+            <img src = "images/blackwidow.jpg">
+            <h2>Blackwidow</h2>
+            <p>Its Blackwidow</p>
+        </div><div class = "card marvel all">
+            <img src = "images/wonder.jpg">
+            <h2>wonder</h2>
+            <p>Its wonder</p>
+        </div>
+          <div class = "card avengers all">
+            <img src = "images/america.jpg">
+            <h2>Captain america</h2>
+            <p>Its Captain america</p>
+        </div><div class = "card guardians all">
+            <img src = "images/robin.jpg">
+            <h2>robin</h2>
+            <p>Its robin</p>
+        </div><div class = "card donno all">
+            <img src = "images/flash.jpg">
+            <h2>flash</h2>
+            <p>Its flash</p>
+        </div>
+          
+        </div>
+          
+        <script>
+function filterCards(event){
+  var clicked = event.currentTarget;
+  var label = $(clicked).text();
+  $('.card').hide();
+  var selected = $(clicked).val();
+  $('.'+selected).show();
+  
+  if(selected == 'card') {
+    $('#heading').text("Superhero Cards");
+  } else {
+    $('#heading').text(label);
+  }
+  $('.active').removeClass('active');
+            $(clicked).addClass('active');
+}
+          $("button").click(filterCards); 
+
+            
+            
+           
+        </script>
+    </body>
+</html>
